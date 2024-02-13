@@ -24,5 +24,7 @@ public class Assignment4 {
         String openingANewWindowText = driver.findElement(By.xpath("//h3[text()='Opening a new window']")).getText();
         assert openingANewWindowText.equals("Opening a new window");
         System.out.println(openingANewWindowText);
+
+        driver.quit();
     }
 }
